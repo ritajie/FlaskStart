@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div class='content'>
+	<p class='p1'>欢迎使用路小鹿的Flask模版~</p>
+	<p class='p2'>Github: <a href='https://github.com/ritajie/FlaskStart'>FlaskStart</a></p>
+</div>
+
+<style>
+    .content{
+		background-image: url(/static/img/deer.jpg);
+		position: relative;
+		height: 100vh;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.content p{
+        color: #674521;
+		position: absolute;
+		left: 80px;
+	}
+	.content .p1{
+		font-size: 2.5em;
+        top: 100px;
+	}
+	.content .p2{
+		font-size: 1.5em;
+        top: 160px;
+	}
+	.content .p2 a{
+        text-decoration: underline;
+		color: #674521;
+	}
+</style>
+{% endblock %}
